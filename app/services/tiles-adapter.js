@@ -1,10 +1,24 @@
 import Service from '@ember/service';
 import { inject as service } from '@ember/service';
 import EmberObject, { computed } from '@ember/object';
-import { getBuzzword } from '../utils/buzzwords';
+import { getSponsor } from '../utils/sponsors';
+import { getTier } from '../utils/tiers';
 
 const TILE_COUNT = 25;
 const TILES_LOCAL_STORAGE_KEY = 'EMBER_BINGO_TILES';
+
+
+function generateTile(tilePosition) {
+  const tier = getTier(tilePosition);
+  const { name, activity } = getSponsor(tier);
+
+  return EmberObject.create({
+    tier,
+    sponsor: name,
+    activity,
+    selected: false,
+  });
+}
 
 /*
   @title Titles Adapter Service
@@ -43,19 +57,9 @@ export default Service.extend({
 
     for (let i = 0; i < TILE_COUNT; i++) {
       let tile;
-      // free word in the middle of the board
-      if (i === 12) {
-        tile =  EmberObject.create({
-                  word: 'ember',
-                  selected: true,
-                  free: true
-                });
-      } else {
-        tile =  EmberObject.create({
-                  word: getBuzzword(),
-                  selected: false
-                });
-      }
+
+      tile = generateTile(i);
+
       tiles.push(tile);
     }
 
