@@ -1,11 +1,13 @@
 import Component from '@ember/component';
-import { mapBy, and, or, alias } from '@ember/object/computed';
+import { mapBy, alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
   classNames: ['bingo-board'],
 
   tilesAdapter: service(),
+
+  router: service(),
 
   /*  @title tiles
       @dev A collection of Ember objects that represent the buzzword
@@ -19,13 +21,8 @@ export default Component.extend({
 
   actions: {
     toggleTileSelect(tile) {
-      const selected = tile.get('selected');
-      tile.set('selected', !selected);
-
-      this.tilesAdapter.saveTiles();
-
-      const win = this.win;
-      this.set('showWin', win);
+      console.log(tile);
+      this.router.transitionTo('tiles', tile.slug)
     }
   }
 });

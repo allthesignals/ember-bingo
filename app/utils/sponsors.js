@@ -1,3 +1,5 @@
+import { dasherize } from '@ember/string';
+
 function randomNumber(max) {
   return Math.floor(Math.random() * max)
 }
@@ -203,9 +205,11 @@ const SPONSORS = [
       description: ''
     }
   },
-];
+].map(sponsor => ({
+  ...sponsor,
+  slug: dasherize(sponsor.name),
+}));
 
-// tmp
 let sponsors = [];
 
 export function getSponsor(tier) {
