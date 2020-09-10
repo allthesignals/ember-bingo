@@ -6,7 +6,7 @@ html, body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   min-height: 100%;
-  background: url(https://ember-api-docs-frontend.global.ssl.fastly.net/assets/images/header-e801b95bf8a1c74fa24400105349672b.svg) top center no-repeat #dd6a58;
+  background-color: #dd6a58;
   background-size: cover;
 }
 
@@ -276,4 +276,20 @@ body {
   .print-only, .print-only * {
     display: inline-block !important;
   }
+}
+
+.diamond {
+  background-color: white;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.bronze {
+  background-color: brown;
+}
+
+.silver {
+  background-color: silver;
 }

@@ -1,14 +1,10 @@
 {{#each tiles as |tile|}}
-  <div role="button" aria-pressed={{tile.selected}} class="tile {{if tile.selected "selected"}} {{if tile.free "free"}}"
-    onclick={{action "toggleTileSelect" tile}}>
-    <p class="tile-word">{{tile.word}}</p>
+  <div
+    role="button"
+    aria-pressed={{tile.selected}}
+    class="tile {{tile.tier}}"
+    onclick={{action "toggleTileSelect" tile}}
+  >
+    <p class="tile-word">{{tile.sponsor}} {{if tile.selected "selected"}}</p>
   </div>
 {{/each}}
-
-{{#if shouldShowWin}}
-  <div class="win-background" {{action (mut showWin) false}}>
-    <h2 class="win-message">BINGO!</h2>
-    <img class="tomster" src="/images/18_EmberConf_Tomster_ISO_B.png" width="280" height="449" alt="Party Tomster">
-    <p class="fine-print">Tomster is the official mascot of Ember and a registered trademark of Tilde Inc. This logo is used with permission from Leah Silber, CEO @Tilde, and should not be reproduced without consent.</p>
-  </div>
-{{/if}}
