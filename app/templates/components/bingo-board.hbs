@@ -3,6 +3,7 @@
     role="button"
     aria-pressed={{tile.selected}}
     class="tile {{tile.tier}}"
+    style="background-image: url({{tile.image}});background-size: cover;"
     onclick={{action "toggleTileSelect" tile}}
   >
     <p class="tile-word">{{tile.sponsor}} {{if tile.selected "selected"}}</p>
