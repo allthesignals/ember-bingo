@@ -21,7 +21,6 @@ export default Component.extend({
 
   actions: {
     toggleTileSelect(tile) {
-      console.log(tile);
       this.router.transitionTo('tiles', tile.slug)
     }
   }
