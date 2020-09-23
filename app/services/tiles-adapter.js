@@ -42,11 +42,17 @@ export default Service.extend({
 
     if (!tiles) {
       this.newTiles();
-      return
+
+      this.saveTiles();
+
+      return;
     }
 
     tiles = tiles.map((tile) => {
-      return EmberObject.create(tile);
+      const tileClass = EmberObject.create(tile);
+      tileClass.activity = EmberObject.create(tileClass.activity);
+
+      return tileClass;
     });
     this.set('tiles', tiles);
     this.saveTiles();

@@ -1,8 +1,11 @@
-{{log @tile}}
-
-<Input
-  value=''
-  type="file"
-  accept="image/*"
-  {{on 'change' (fn this.handleFile @tile)}}
-/>
+<FileUpload @name="photos"
+            @accept="image/*"
+            @onfileadd={{action this.handleFile}} as |queue|>
+  <a class="button">
+    {{#if queue.files.length}}
+      Uploading...
+    {{else}}
+      Upload file
+    {{/if}}
+  </a>
+</FileUpload>

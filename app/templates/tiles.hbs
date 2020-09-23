@@ -3,8 +3,13 @@
 <br/>
 <br/>
 
+{{#if this.model.image}}
+  <img src="{{this.model.image}}" alt="" />
+{{/if}}
+
 <ImageUploader
-  @tile={{this.model.sponsor}}
+  @tile={{this.model}}
+  @didUpload={{this.successfulUpload}}
 />
 
 {{outlet}}
