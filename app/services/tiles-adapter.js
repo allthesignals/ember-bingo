@@ -1,6 +1,7 @@
 import Service from '@ember/service';
 import { inject as service } from '@ember/service';
 import EmberObject, { computed } from '@ember/object';
+import fetch from 'fetch';
 import { getSponsor } from '../utils/sponsors';
 import { getTier } from '../utils/tiers';
 
@@ -76,5 +77,17 @@ export default Service.extend({
     const tiles = this.get('tiles');
 
     this.get('localStorage').setItem(TILES_LOCAL_STORAGE_KEY, tiles);
+  },
+
+  submitTiles() {
+    const tiles = this.get('tiles');
+
+    return fetch('/.netlify/functions/submit-results', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(tiles),
+    });
   }
 });

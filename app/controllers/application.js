@@ -2,14 +2,12 @@ import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
 
-export default class TilesController extends Controller {
+export default class ApplicationController extends Controller {
   @service
   tilesAdapter;
 
   @action
-  async successfulUpload(uploadUrl) {
-    this.model.set('image', uploadUrl);
-
-    this.tilesAdapter.saveTiles();
+  async submitResults() {
+    await this.tilesAdapter.submitTiles();
   }
 }

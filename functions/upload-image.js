@@ -1,16 +1,12 @@
 const uuid = require('uuid')
 const AWS = require('aws-sdk')
-
-const {
-  accessKeyId,
-  secretAccessKey,
-} = process.env;
+require('dotenv').config();
 
 const s3 = new AWS.S3({
   region: 'us-west-2',
   bucket: 'viva-las-sisu',
-  accessKeyId,
-  secretAccessKey,
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
 });
 
 const uuidv4 = uuid.v4;
@@ -35,12 +31,12 @@ const getUploadURL = async (contentType, extension) => {
   return new Promise((resolve, reject) => {
     s3.getSignedUrl('putObject', s3Params, function(err, data) {
       resolve({
-        "statusCode": 200,
-        "isBase64Encoded": false,
-        "headers": { "Access-Control-Allow-Origin": "*" },
-        "body": JSON.stringify({
-          "uploadURL": data,
-          "photoFilename": actionId,
+        statusCode: 200,
+        isBase64Encoded: false,
+        headers: { 'Access-Control-Allow-Origin': '*' },
+        body: JSON.stringify({
+          uploadURL: data,
+          photoFilename: actionId,
         }),
       });
     });
