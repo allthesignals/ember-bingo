@@ -25,10 +25,11 @@ exports.handler = async (event) => {
 
 const submitResults = async (tiles) => {
   const doc = new GoogleSpreadsheet('1tMq2vfnkqIJ7OdfhdbyHPltURII_ed3xV-86zD6opEw');
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
   await doc.useServiceAccountAuth({
     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY,
+    private_key: privateKey.replace(/\\n/gm, "\n"),
   });
 
   const now = new Date();
