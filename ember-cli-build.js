@@ -7,7 +7,12 @@ module.exports = function(defaults) {
     // Add options here
     'ember-service-worker': {
       versionStrategy: 'every-build'
-    }
+    },
+    SemanticUI: {
+      import: {
+        javascript: false
+      },
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

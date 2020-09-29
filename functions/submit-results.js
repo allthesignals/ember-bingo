@@ -1,11 +1,12 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 require('dotenv').config();
 
-const HEADER_VALUES = ['A', 'B', 'C', 'D', 'E'];
+// const HEADER_VALUES = ['A', 'B', 'C', 'D', 'E'];
+const HEADER_VALUES = ['picture', 'activity', 'description', 'sponsor'];
 
 exports.handler = async (event) => {
   const tiles = JSON.parse(event.body);
-  const mungedTiles = reshapeTiles(tiles);
+  const mungedTiles = reshapeTilesToList(tiles);
 
   try {
     await submitResults(mungedTiles);
@@ -43,24 +44,34 @@ const submitResults = async (tiles) => {
   });
 
   await sheet.addRows(tiles);
+  await sheet.loadCells();
+
+  tiles.forEach((tile, index) => {
+    if (tile.picture) {
+      const cell = sheet.getCell(index + 1, 0);
+
+      cell.formula = `=HYPERLINK("${tile.picture}", IMAGE("${tile.picture}",1))`;
+    }
+  });
+
+  await sheet.saveUpdatedCells();
+  await sheet.updateDimensionProperties('COLUMNS', {
+    pixelSize: 300,
+  });
+  await sheet.updateDimensionProperties('ROWS', {
+    pixelSize: 300,
+  }, {
+    startIndex: 1,
+  });
 }
 
-const reshapeTiles = (tiles) => {
-  return tiles.reduce((acc, curr, index, array) => {
-    const shouldFillRow = ((index + 1) % 5 === 0);
-
-    if (shouldFillRow) {
-      const start = index - 4;
-      const zeroBased = (start < 0) ? 0 : start;
-      const fullRow = array.slice(zeroBased, index + 1)
-        .reduce((rowAcc, curr, fullRowIndex) => ({
-          [HEADER_VALUES[fullRowIndex]]: `${curr.sponsor} : ${curr.activity.title} \n \n ${curr.image || ''}`,
-          ...rowAcc,
-        }), {});
-
-      return [fullRow, ...acc];
-    }
-
-    return acc;
-  }, []);
+const reshapeTilesToList = (tiles) => {
+  return tiles
+    .map(tile => ({
+      sponsor: tile.sponsor,
+      activity: tile.activity.title,
+      description: tile.activity.description,
+      picture: tile.image,
+    }))
+    .filter(tile => tile.picture);
 };

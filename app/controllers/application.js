@@ -8,6 +8,14 @@ export default class ApplicationController extends Controller {
 
   @action
   async submitResults() {
-    await this.tilesAdapter.submitTiles();
+    try {
+      await this.tilesAdapter.submitTiles();
+    } catch (e) {
+      alert(`
+          Hmmm... something went wrong submitting your results.
+
+          Please try again, and take a screenshot as a backup.
+        `);
+    }
   }
 }

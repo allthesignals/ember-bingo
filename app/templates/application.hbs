@@ -1,13 +1,12 @@
 <header class="header">
   <h1>Viva Las Sisu!</h1>
-  <button
-    {{on 'click' this.submitResults}}
-  >
-    Submit Results
-  </button>
 </header>
 
 {{bingo-board}}
+
+<button {{on 'click' this.submitResults}}>
+  Submit Results
+</button>
 
 <footer class="footer">
   {{#new-board class="new-board no-print" role="button"}}New board{{/new-board}}
