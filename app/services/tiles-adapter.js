@@ -11,12 +11,13 @@ const TILES_LOCAL_STORAGE_KEY = 'EMBER_BINGO_TILES';
 
 function generateTile(tilePosition) {
   const tier = getTier(tilePosition);
-  const { name, activity, ...everythingElse } = getSponsor(tier);
+  const { name, activity, logo, ...everythingElse } = getSponsor(tier);
 
   return EmberObject.create({
     sponsor: name,
     activity,
     selected: false,
+    logo,
     ...everythingElse,
   });
 }

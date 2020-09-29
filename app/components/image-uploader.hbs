@@ -1,11 +1,12 @@
-<FileUpload @name="photos"
-            @accept="image/*"
-            @onfileadd={{action this.handleFile}} as |queue|>
-  <a class="button">
-    {{#if queue.files.length}}
-      Uploading...
-    {{else}}
-      Upload file
-    {{/if}}
-  </a>
+<FileUpload ...attributes
+  @name="photos"
+  @accept="image/*"
+  @onfileadd={{action this.handleFile}} as |queue|
+>
+  {{#if queue.files.length}}
+    Uploading...
+  {{else}}
+    {{yield}}
+  {{/if}}
+
 </FileUpload>

@@ -2,7 +2,9 @@
   <h1>Viva Las Sisu!</h1>
 </header>
 
-{{bingo-board}}
+{{#bingo-board}}
+  {{outlet}}
+{{/bingo-board}}
 
 <button {{on 'click' this.submitResults}}>
   Submit Results
@@ -13,5 +15,3 @@
   <a class="github-link no-print" href="https://github.com/ksin/ember-bingo">Github</a>
   <p class="display-none print-only">github.com/ksin/ember-bingo</p>
 </footer>
-
-{{outlet}}

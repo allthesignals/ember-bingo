@@ -8,6 +8,7 @@ const SPONSORS = [
   {
     tier: 'diamond',
     name: 'B&E Pest Control',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'water 4 sisu',
       description: 'bring a case of bottled water to sisu, take a selfie'
@@ -16,6 +17,7 @@ const SPONSORS = [
   {
     tier: 'gold',
     name: 'CACI',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'plaza roll call',
       description: 'post a selfie in front of dig it in the plaza to your story, take a screen shot'
@@ -24,6 +26,7 @@ const SPONSORS = [
   {
     tier: 'gold',
     name: 'Old Republic Title',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'this is what democracy looks like',
       description: 'write a letter to an elected official encouraging them to fund homeless services'
@@ -32,6 +35,7 @@ const SPONSORS = [
   {
     tier: 'gold',
     name: 'Supreme Lending',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Capitol Hill hello',
       description: 'Take a selfie outside of 1984 studios, post it to your story, take a screenshot'
@@ -40,6 +44,7 @@ const SPONSORS = [
   {
     tier: 'gold',
     name: 'Cafe 501',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'curbside collab',
       description: 'buy a curbside chronicle, take a selfie'
@@ -48,6 +53,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: "Eileen's Cookies",
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'all aboard',
       description: 'take a selfie featuring the train depot mural'
@@ -56,6 +62,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: 'Hefner Grill',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'pick me up',
       description: 'write an encouraging letter to a homeless youth, drop it off at sisu'
@@ -64,6 +71,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: 'OCD Cleaning',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'dont be an ass',
       description: 'like the mule on facebook, take a screenshot'
@@ -72,6 +80,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: 'Rustic Cuff',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Do the okie pokie',
       description: 'do the hokey pokey on the steps of the state capital, post the video to your story, tag sisu'
@@ -80,6 +89,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: 'Salata',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'stronger together',
       description: 'buy a sisu stronger together shirt'
@@ -88,6 +98,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: 'Lifetime Athletics',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'captain underpants',
       description: 'bring new underwear to sisu, socks count, no tighty whities'
@@ -96,6 +107,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: '3Sixty',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: "Now it's time to get funky",
       description: 'take a selfie at factory obscura mix tape'
@@ -104,6 +116,7 @@ const SPONSORS = [
   {
     tier: 'silver',
     name: "Aunti Em's Sweets",
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'wanderlust',
       description: 'check out aqueous at oklahoma contemporary, take a selfie'
@@ -112,6 +125,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Barking Dog Bakery',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'winter is coming',
       description: 'bring a new or lightly used coat to sisu'
@@ -120,6 +134,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'CMG Financial - Lisa Pape',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Slide to the left',
       description: ''
@@ -128,6 +143,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Elliot Roofing',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Slide to the right',
       description: ''
@@ -136,6 +152,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Embassy Suites - Norman',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Criss cross',
       description: ''
@@ -144,6 +161,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Firebirds - OKC',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Cha cha now yall',
       description: ''
@@ -152,6 +170,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Jan Wysocki - personal donation',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Hands on your knees',
       description: ''
@@ -160,6 +179,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Jana Thompson',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Reverse, reverse',
       description: ''
@@ -168,6 +188,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Kendra Scott',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Charlie brown',
       description: ''
@@ -176,6 +197,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Nothing Bundt Cakes',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Two hops now yall',
       description: ''
@@ -184,6 +206,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: 'Oklahoma Fidelity Bank',
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Hands on your knees',
       description: ''
@@ -192,6 +215,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: "Packard's",
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: "Drop it like it's hot",
       description: ''
@@ -200,6 +224,7 @@ const SPONSORS = [
   {
     tier: 'bronze',
     name: "Rudy's BBQ",
+    logo: 'https://picsum.photos/60/90',
     activity: {
       title: 'Pop lock and drop it',
       description: ''
