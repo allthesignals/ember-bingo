@@ -1,3 +1,9 @@
+{{#if this.hasSimpleBingo}}
+  <button class="ui fluid button" {{action 'submitResults'}}>
+    Submit Results, or Keep Going!
+  </button>
+{{/if}}
+
 {{#each tiles as |tile|}}
   <div
     role="button"
@@ -12,3 +18,8 @@
 
 {{outlet}}
 
+{{#if this.hasSimpleBingo}}
+  <button class="ui fluid button" {{action 'submitResults'}}>
+    Submit Results, or Keep Going!
+  </button>
+{{/if}}

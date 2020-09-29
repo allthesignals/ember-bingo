@@ -1,5 +1,6 @@
 import Component from '@ember/component';
-import { mapBy, alias } from '@ember/object/computed';
+import { computed } from '@ember/object';
+import { mapBy, alias, filterBy } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -18,10 +19,24 @@ export default Component.extend({
   */
   tiles: alias('tilesAdapter.tiles'),
   tilesSelected: mapBy('tiles', 'selected'),
+  hasSimpleBingo: computed('tiles.@each.selected', function() {
+    return this.tiles.filterBy('selected', true).length === 5;
+  }),
 
   actions: {
     toggleTileSelect(tile) {
       this.router.transitionTo('tiles', tile.slug)
+    },
+    async submitResults() {
+      try {
+        await this.tilesAdapter.submitTiles();
+      } catch (e) {
+        alert(`
+              Hmmm... something went wrong submitting your results.
+
+              Please try again, and take a screenshot as a backup.
+            `);
+      }
     }
   }
 });

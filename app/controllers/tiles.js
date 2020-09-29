@@ -9,6 +9,7 @@ export default class TilesController extends Controller {
   @action
   async successfulUpload(uploadUrl) {
     this.model.set('image', uploadUrl);
+    this.model.set('selected', true);
 
     this.tilesAdapter.saveTiles();
   }
