@@ -196,7 +196,15 @@ const SPONSORS = [
     "activity": {
       "description": "window selfie in your favorite sunnies"
     }
-  }
+  },
+  {
+    "tier": "bronze",
+    "name": "Castle row",
+    "logo": "https://picsum.photos/60/90",
+    "activity": {
+      "description": "castle row - multimedia production have a mural wall of music icons that we could use to set up photo shoot. 2-5pm on Sat & Sun?"
+    }
+  },
 ].map(sponsor => ({
   ...sponsor,
   slug: dasherize(sponsor.name),
