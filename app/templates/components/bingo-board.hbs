@@ -1,5 +1,5 @@
 {{#if this.hasSimpleBingo}}
-  <button class="ui green fluid button" {{action 'submitResults'}}>
+  <button class="ui green fluid button {{if this.isSubmitting 'loading disabled'}}" {{action 'submitResults'}} disable={{if this.isSubmitting true false}}>
     Submit Results, or Keep Going!
   </button>
 {{/if}}
@@ -21,7 +21,7 @@
 {{outlet}}
 
 {{#if this.hasSimpleBingo}}
-  <button class="ui green fluid button" {{action 'submitResults'}}>
+  <button class="ui green fluid button {{if this.isSubmitting 'loading disabled'}}" {{action 'submitResults'}} disable={{if this.isSubmitting true false}}>
     Submit Results, or Keep Going!
   </button>
 {{/if}}

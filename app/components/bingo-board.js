@@ -21,19 +21,31 @@ export default Component.extend({
     return this.tiles.filterBy('selected', true).length >= 5;
   }),
 
+  isSubmitting: false,
+
   actions: {
     toggleTileSelect(tile) {
       this.router.transitionTo('tiles', tile.slug)
     },
     async submitResults() {
-      try {
-        await this.tilesAdapter.submitTiles();
-      } catch (e) {
-        alert(`
-              Hmmm... something went wrong submitting your results.
+      this.set('isSubmitting', true);
 
-              Please try again, and take a screenshot as a backup.
-            `);
+      try {
+        const result = await this.tilesAdapter.submitTiles();
+
+        if (result.status >= 400) {
+          throw new Error(`${result.status} ${result.statusText}`);
+        }
+
+        this.set('isSubmitting', false);
+      } catch (e) {
+        this.set('isSubmitting', false);
+
+        alert(`
+          Hmmm... something went wrong submitting your results.
+
+          Please try again, and take a screenshot as a backup.
+        `);
       }
     }
   }
