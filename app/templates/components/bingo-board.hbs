@@ -9,10 +9,10 @@
     role="button"
     aria-pressed={{tile.selected}}
     class="tile {{tile.tier}}"
-    style="background-image: url({{tile.image}});background-size: cover;"
+    style="background-image: url('{{tile.logo}}');background-size: contain;"
     onclick={{action "toggleTileSelect" tile}}
   >
-    <p class="tile-word">{{tile.sponsor}} {{if tile.selected "selected"}}</p>
+    <p class="tile-word">{{if tile.logo "" tile.sponsor}}</p>
   </div>
 {{/each}}
 
