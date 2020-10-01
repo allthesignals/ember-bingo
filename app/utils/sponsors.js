@@ -16,7 +16,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "Haskell",
-    "logo": "/images/logos/Haskell Logo 4c.jpg",
+    "logo": "/images/logos/haskell.png",
     "activity": {
       "description": "Stop into Not Your Average Joe and tag yourself & the Viva Treasure Hunt to pick up a free sticker."
     }
@@ -32,7 +32,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "The Atkinson Team",
-    "logo": "/images/logos/Beth Atkinson.jpg",
+    "logo": "/images/logos/atkinson group.png",
     "activity": {
       "description": "Beth Atkinson encurages you to perform a Random Act of Kindness."
     }
@@ -48,7 +48,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Center for Economic Development Law",
-    "logo": "/images/logos/Center for Economic Development Law.jpg",
+    "logo": "/images/logos/center for econ dev law.png",
     "activity": {
       "description": "Confirm that you are registered to Vote (or help a friend!)"
     }
@@ -56,7 +56,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Heartland Historical Properties",
-    "logo": "/images/logos/HHP.jpg",
+    "logo": "/images/logos/hhp.png",
     "activity": {
       "description": "Post a selfie in front of HHP's sign at 3503 Oakhurst Drive in MWC - RIDDLE in window?"
     }
@@ -80,7 +80,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Freedom Oklahoma",
-    "logo": "/images/logos/Freedom Oklahoma.jpg",
+    "logo": "/images/logos/FO+Logo+Color+Transparent.png",
     "activity": {
       "description": "Freedom Oklahoma invites you to explore an exhibition showcasing local artists' interpretation of the theme UNIFIED at DNA Galleries in the Plaza. Submit the piece that impacts you the most."
     }
@@ -128,7 +128,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Curbside",
-    "logo": "",
+    "logo": "/images/logos/curbside.png",
     "activity": {
       "description": "Buy a Curbside Chronicle and submit a photo of your favorite article."
     }
@@ -136,7 +136,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Holey Rollers",
-    "logo": "/images/logos/Holey Rollers.png",
+    "logo": "/images/logos/holey rollers.png",
     "activity": {
       "description": "Stop in at Holey Rollers in the Paseo to write an encouraging note to a homeless youth or Sisu staff member. Show your map to get a free drip coffee or $2 off any drink when you buy a donut!"
     }
@@ -144,7 +144,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "1984 Studios",
-    "logo": "/images/logos/1984 Studios.jpg",
+    "logo": "/images/logos/1984+Studios+Logo+2020.png",
     "activity": {
       "description": "Take a selfie outside of 1984 studios! Post it to your story and send us a screenshot."
     }
@@ -152,7 +152,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Meridian Market",
-    "logo": "/images/logos/Meridian Market.jpg",
+    "logo": "/images/logos/meridian market.png",
     "activity": {
       "description": "Drop off new or gently used coats, jackets, etc. at Meridian Market. Show your treasure map here to recieve a FREE craft coffee (or specialty mocktail lemonade) with purchase of an entree."
     }
@@ -160,15 +160,15 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Core4",
-    "logo": "/images/logos/Core4 Brewing Company.jpg",
+    "logo": "/images/logos/Core4 Brewing Company.png",
     "activity": {
       "description": "Stop in at Core4 Brewery on Film Row to enjoy the patio weather. Show your Treasure Map and get $2 off a beer flight."
     }
   },
   {
     "tier": "bronze",
-    "name": "Loaded Bowl",
-    "logo": "",
+    "name": "Ideal Homes",
+    "logo": "/images/logos/ideal homes.png",
     "activity": {
       "description": ""
     }
@@ -184,7 +184,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Red Rooster",
-    "logo": "/images/logos/Red Rooster.jpg",
+    "logo": "/images/logos/red rooster.png",
     "activity": {
       "description": "Eat local! Visit during brunch, happy hur, or any time in between and get 15% off all food with the purchase of a cocktail or wine."
     }
@@ -192,7 +192,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Dig It",
-    "logo": "/images/logos/POSTED - Dig It.jpg",
+    "logo": "/images/logos/dig it.png",
     "activity": {
       "description": "window selfie in your favorite sunnies"
     }
@@ -200,7 +200,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Castle row",
-    "logo": "",
+    "logo": "/images/logos/CASTLEROW_BLANK_W.png",
     "activity": {
       "description": "castle row - multimedia production have a mural wall of music icons that we could use to set up photo shoot. 2-5pm on Sat & Sun?"
     }
