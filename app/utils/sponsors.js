@@ -136,7 +136,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Holey Rollers",
-    "logo": "/images/logos/holey rollers.png",
+    "logo": "/images/logos/holey-rollers.png",
     "activity": {
       "description": "Stop in at Holey Rollers in the Paseo to write an encouraging note to a homeless youth or Sisu staff member. Show your map to get a free drip coffee or $2 off any drink when you buy a donut!"
     }
