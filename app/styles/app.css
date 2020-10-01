@@ -42,7 +42,7 @@ body {
   margin: auto;
   cursor: pointer;
   text-align: center;
-  border: 8px solid #efefef00;
+  border: 2px solid #efefef00;
   font-size: 18px;
   color: white;
 }
@@ -306,4 +306,9 @@ body {
 
 .tile-view {
   margin: 1em;
+}
+
+.uploaded-photo {
+  max-height: 200px;
+  overflow: hidden;
 }
