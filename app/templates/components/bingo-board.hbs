@@ -13,11 +13,9 @@
 </div>
 
 {{#if this.hasSimpleBingo}}
-<div class="ui basic segment">
   <button class="ui green fluid button {{if this.isSubmitting 'loading disabled'}}" {{action 'submitResults'}} disable={{if this.isSubmitting true false}}>
     Submit Results, or Keep Going!
   </button>
-</div>
 {{/if}}
 
 {{outlet}}
