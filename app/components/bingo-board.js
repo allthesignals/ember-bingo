@@ -18,7 +18,7 @@ export default Component.extend({
   tiles: alias('tilesAdapter.tiles'),
   tilesSelected: mapBy('tiles', 'selected'),
   hasSimpleBingo: computed('tiles.@each.selected', function() {
-    return this.tiles.filterBy('selected', true).length === 5;
+    return this.tiles.filterBy('selected', true).length >= 5;
   }),
 
   actions: {
