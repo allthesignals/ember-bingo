@@ -12,5 +12,7 @@ export default class TilesController extends Controller {
     this.model.set('selected', true);
 
     this.tilesAdapter.saveTiles();
+
+    this.transitionToRoute('index');
   }
 }
