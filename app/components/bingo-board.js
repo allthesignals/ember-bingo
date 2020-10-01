@@ -4,8 +4,6 @@ import { mapBy, alias, filterBy } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
-  classNames: ['bingo-board'],
-
   tilesAdapter: service(),
 
   router: service(),

@@ -4,17 +4,19 @@
   </button>
 {{/if}}
 
-{{#each tiles as |tile|}}
-  <div
-    role="button"
-    aria-pressed={{tile.selected}}
-    class="tile"
-    style="background-image: url('{{tile.logo}}');background-size: contain; background-repeat: no-repeat; background-position: center;"
-    onclick={{action "toggleTileSelect" tile}}
-  >
-    <p class="tile-word">{{if tile.logo "" tile.sponsor}}</p>
-  </div>
-{{/each}}
+<div class="bingo-board">
+  {{#each tiles as |tile|}}
+    <div
+      role="button"
+      aria-pressed={{tile.selected}}
+      class="tile"
+      style="background-image: url('{{if tile.image tile.image tile.logo}}');background-size: contain; background-repeat: no-repeat; background-position: center;"
+      onclick={{action "toggleTileSelect" tile}}
+    >
+      <p class="tile-word">{{if tile.logo "" tile.sponsor}}</p>
+    </div>
+  {{/each}}
+</div>
 
 {{outlet}}
 

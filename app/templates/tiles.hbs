@@ -1,36 +1,41 @@
-<div class="ui active basic modal">
-  <div class="ui fluid card tile-view">
-    {{#if this.model.image}}
-      <div class="image">
-        <img src="{{this.model.image}}" alt="" />
-      </div>
-    {{/if}}
-    <div class="content">
-      <i class="right floated like icon"></i>
-      <div class="header">{{this.model.activity.title}}</div>
-      <div class="description">
-        {{#if this.model.activity.description}}
-          {{this.model.activity.description}}
-        {{else}}
-          Upload a photo for this clue!
-        {{/if}}
-      </div>
-    </div>
-    <div class="extra content">
-      <div class="ui two buttons">
-        <ImageUploader
-          class="ui green button"
-          @tile={{this.model}} @didUpload={{this.successfulUpload}}
-        >
-          <i class="add icon"></i>
-          {{#if this.model.image}}
-            Replace
+<div class="popup">
+  <div class="ui active basic modal">
+    <div class="ui fluid card tile-view">
+      {{#if this.model.image}}
+        <div class="image">
+          <img src="{{this.model.image}}" alt="" />
+        </div>
+      {{/if}}
+      <div class="content">
+        <i class="right floated like icon"></i>
+        <div class="header">
+          <img src="{{this.model.logo}}" alt="" class="ui medium centered image">
+        </div>
+        <div class="description">
+          {{#if this.model.activity.description}}
+            {{this.model.activity.description}}
           {{else}}
-            Photo
+            Upload a photo for this clue!
           {{/if}}
-        </ImageUploader>
-        <LinkTo @route='index' class="ui button">Back</LinkTo>
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="ui two buttons">
+          <ImageUploader
+            class="ui green button"
+            @tile={{this.model}} @didUpload={{this.successfulUpload}}
+          >
+            <i class="add icon"></i>
+            {{#if this.model.image}}
+              Replace
+            {{else}}
+              Photo
+            {{/if}}
+          </ImageUploader>
+          <LinkTo @route='index' class="ui button">Back</LinkTo>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
