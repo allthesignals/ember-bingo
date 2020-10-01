@@ -45,6 +45,7 @@ body {
   border: 2px solid #efefef00;
   font-size: 18px;
   color: white;
+  background-color: #ffffff29
 }
 
 @media only screen and (max-width: 720px) {
