@@ -3,10 +3,5 @@
   @accept="image/*"
   @onfileadd={{action this.handleFile}} as |queue|
 >
-  {{#if queue.files.length}}
-    Uploading...
-  {{else}}
-    {{yield}}
-  {{/if}}
-
+  {{yield queue.files.length}}
 </FileUpload>

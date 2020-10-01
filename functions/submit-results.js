@@ -6,10 +6,11 @@ const HEADER_VALUES = ['picture', 'activity', 'description', 'sponsor'];
 
 exports.handler = async (event) => {
   const tiles = JSON.parse(event.body);
+  const { authentication } = event.headers;
   const mungedTiles = reshapeTilesToList(tiles);
 
   try {
-    await submitResults(mungedTiles);
+    await submitResults(mungedTiles, authentication);
 
     return {
       statusCode: 200,
@@ -24,7 +25,7 @@ exports.handler = async (event) => {
   }
 };
 
-const submitResults = async (tiles) => {
+const submitResults = async (tiles, user) => {
   const doc = new GoogleSpreadsheet('1tMq2vfnkqIJ7OdfhdbyHPltURII_ed3xV-86zD6opEw');
   const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
@@ -36,7 +37,7 @@ const submitResults = async (tiles) => {
   const now = new Date();
   const formattedDateTime = `${now.toLocaleDateString()}${now.toLocaleTimeString()}`;
   const cleanedUpDateTime = formattedDateTime.replace(':', '').replace(':', '');
-  const sheetTitle = `[USER-NAME-HERE]-${cleanedUpDateTime}`;
+  const sheetTitle = `${user}-${cleanedUpDateTime}`;
 
   const sheet = await doc.addSheet({
     title: sheetTitle,

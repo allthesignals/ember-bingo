@@ -1,10 +1,11 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
-import { mapBy, alias, filterBy } from '@ember/object/computed';
+import { mapBy, alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
   tilesAdapter: service(),
+  localStorage: service(),
 
   router: service(),
 
@@ -30,8 +31,10 @@ export default Component.extend({
     async submitResults() {
       this.set('isSubmitting', true);
 
+      const userInfo = Object.values(this.localStorage.getItem('USER_INFO')).join('-');
+
       try {
-        const result = await this.tilesAdapter.submitTiles();
+        const result = await this.tilesAdapter.submitTiles(userInfo);
 
         if (result.status >= 400) {
           throw new Error(`${result.status} ${result.statusText}`);

@@ -80,13 +80,14 @@ export default Service.extend({
     this.get('localStorage').setItem(TILES_LOCAL_STORAGE_KEY, tiles);
   },
 
-  submitTiles() {
+  submitTiles(userInfo) {
     const tiles = this.get('tiles');
 
     return fetch('/.netlify/functions/submit-results', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Authentication': userInfo,
       },
       body: JSON.stringify(tiles),
     });
