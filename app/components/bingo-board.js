@@ -3,6 +3,28 @@ import { computed } from '@ember/object';
 import { mapBy, alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
+const DIMENSION = [1, 2, 3, 4, 5];
+
+const POSSIBLE_WINS = [
+  // DIAGONALS
+  [0, 6, 12, 18, 24],
+  [4, 8, 12, 16, 20],
+
+  // ROWS ACROSS
+  ...DIMENSION.reduce(acc => {
+    if (acc[0]) return [acc[0].map(e => e + 5), ...acc];
+
+    return [[0, 1, 2, 3, 4], ...acc];
+  }, []),
+
+  // COLS ACROSS
+  ...DIMENSION.reduce(acc => {
+    if (acc[0]) return [acc[0].map(e => e + 1), ...acc];
+
+    return [[0, 5, 10, 15, 20], ...acc];
+  }, []),
+];
+
 export default Component.extend({
   tilesAdapter: service(),
   localStorage: service(),
@@ -18,9 +40,26 @@ export default Component.extend({
   */
   tiles: alias('tilesAdapter.tiles'),
   tilesSelected: mapBy('tiles', 'selected'),
-  hasSimpleBingo: computed('tiles.@each.selected', function() {
-    return this.tiles.filterBy('selected', true).length >= 5;
+
+  wins: computed('tiles.@each.selected', function() {
+    let selectedIndices = [];
+
+    this.tiles.forEach(tile => {
+      if (tile.selected) {
+        selectedIndices.push(true);
+      } else {
+        selectedIndices.push(false);
+      }
+    });
+
+    return POSSIBLE_WINS.filter(scenario => {
+      return scenario.every(index => {
+        return selectedIndices[index];
+      });
+    });
   }),
+
+  hasSimpleBingo: computed.gte('wins.length', 1),
 
   isSubmitting: false,
 

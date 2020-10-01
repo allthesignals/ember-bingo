@@ -1,4 +1,6 @@
-{{#unless this.userInfo}}
+{{#if this.userInfo}}
+  <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
+{{else}}
   <div class="popup">
     <div class="ui active basic modal">
       <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
@@ -20,6 +22,6 @@
       </form>
     </div>
   </div>
-{{/unless}}
+{{/if}}
 
 {{yield}}
