@@ -42,10 +42,10 @@ body {
   margin: auto;
   cursor: pointer;
   text-align: center;
-  border: 2px solid #efefef00;
+  border: 2px solid rgba(255, 255, 255, 0);
   font-size: 18px;
   color: white;
-  background-color: #ffffff29
+  background-color: rgba(255, 255, 255, 0.178);
 }
 
 @media only screen and (max-width: 720px) {
