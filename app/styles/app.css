@@ -309,6 +309,10 @@ body {
   margin: 1em;
 }
 
+.tile-header {
+  background-color: #0b0b0b;
+}
+
 .uploaded-photo {
   max-height: 200px;
   overflow: hidden;

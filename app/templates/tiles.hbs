@@ -1,14 +1,13 @@
 <div class="popup">
   <div class="ui active basic modal">
-    <div class="ui fluid card tile-view">
+    <div class="ui fluid card">
       {{#if this.model.image}}
         <div class="uploaded-photo image">
           <img src="{{this.model.image}}" alt="" />
         </div>
       {{/if}}
       <div class="content">
-        <i class="right floated like icon"></i>
-        <div class="header">
+        <div class="header tile-header">
           <img src="{{this.model.logo}}" alt="" class="ui medium centered image">
         </div>
         <div class="description">
