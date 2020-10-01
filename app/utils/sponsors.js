@@ -8,7 +8,7 @@ const SPONSORS = [
   {
     "tier": "diamond",
     "name": "Inasmuch Foundation",
-    "logo": "/images/Inasmuch.png",
+    "logo": "/images/logos/Inasmuch.png",
     "activity": {
       "description": "2020's Viva Las Sisu Treasure Hunt is proudly presented by the Inasmuch Foundation."
     }
@@ -16,7 +16,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "Haskell",
-    "logo": "/images/Haskell Logo 4c.jpg",
+    "logo": "/images/logos/Haskell Logo 4c.jpg",
     "activity": {
       "description": "Stop into Not Your Average Joe and tag yourself & the Viva Treasure Hunt to pick up a free sticker."
     }
@@ -24,7 +24,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "Spaces Realty",
-    "logo": "/images/spaces realty.png",
+    "logo": "/images/logos/spaces realty.png",
     "activity": {
       "description": "Explore Aqueous at Campbell Art Park"
     }
@@ -32,7 +32,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "The Atkinson Team",
-    "logo": "/images/Beth Atkinson.jpg",
+    "logo": "/images/logos/Beth Atkinson.jpg",
     "activity": {
       "description": "Beth Atkinson encurages you to perform a Random Act of Kindness."
     }
@@ -40,7 +40,7 @@ const SPONSORS = [
   {
     "tier": "gold",
     "name": "Oklahoma Fidelity",
-    "logo": "/images/Oklahoma Fidelity Bank.png",
+    "logo": "/images/logos/Oklahoma Fidelity Bank.png",
     "activity": {
       "description": "Check out one of our local favorites, Georges Happy Hog Bar-B-Q, on 23rd street between 11-7pm on Saturday."
     }
@@ -48,7 +48,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Center for Economic Development Law",
-    "logo": "/images/Center for Economic Development Law.jpg",
+    "logo": "/images/logos/Center for Economic Development Law.jpg",
     "activity": {
       "description": "Confirm that you are registered to Vote (or help a friend!)"
     }
@@ -56,7 +56,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Heartland Historical Properties",
-    "logo": "/images/HHP.jpg",
+    "logo": "/images/logos/HHP.jpg",
     "activity": {
       "description": "Post a selfie in front of HHP's sign at 3503 Oakhurst Drive in MWC - RIDDLE in window?"
     }
@@ -64,7 +64,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Peace of Mind Pediatrics",
-    "logo": "/images/Peace of Mind Pedriatics.png",
+    "logo": "/images/logos/Peace of Mind Pedriatics.png",
     "activity": {
       "description": "Peace of Mind Pediatrics encourages you to enjoy a walk around Scissortail Park and snap a photo of your favorite part!"
     }
@@ -72,7 +72,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Omega Investments",
-    "logo": "/images/Omega Investments.png",
+    "logo": "/images/logos/Omega Investments.png",
     "activity": {
       "description": "Explore Eastside OKC public art at the With Love event on Saturday from 4-7pm or submit your favorite East OKC mural anytime! www.instagram.com/p/CFSCEzgjs9I/"
     }
@@ -80,7 +80,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Freedom Oklahoma",
-    "logo": "/images/Freedom Oklahoma.jpg",
+    "logo": "/images/logos/Freedom Oklahoma.jpg",
     "activity": {
       "description": "Freedom Oklahoma invites you to explore an exhibition showcasing local artists' interpretation of the theme UNIFIED at DNA Galleries in the Plaza. Submit the piece that impacts you the most."
     }
@@ -88,7 +88,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "James Cooper",
-    "logo": "/images/James Cooper.png",
+    "logo": "/images/logos/James Cooper.png",
     "activity": {
       "description": "Write a letter to an elected official encouraging them to fund homeless services."
     }
@@ -96,7 +96,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "Brandon - TOR",
-    "logo": "/images/The Other Room.png",
+    "logo": "/images/logos/The Other Room.png",
     "activity": {
       "description": ""
     }
@@ -104,7 +104,7 @@ const SPONSORS = [
   {
     "tier": "silver",
     "name": "First American Title",
-    "logo": "/images/First American.png",
+    "logo": "/images/logos/First American.png",
     "activity": {
       "description": "Selfie at a first american title - guessing game in window?"
     }
@@ -112,7 +112,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Sasquatch",
-    "logo": "/images/sasquatch.png",
+    "logo": "/images/logos/sasquatch.png",
     "activity": {
       "description": "Visit the Sasquatch Shaved Ice stand in Plaza for a free snow cone!"
     }
@@ -120,7 +120,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Factory Obscura",
-    "logo": "/images/Factory Obscura.png",
+    "logo": "/images/logos/Factory Obscura.png",
     "activity": {
       "description": "Take a selfie at Factory Obscura mix tape. Take advantage of BOGO tickets with the code FOLOVESSISU"
     }
@@ -136,7 +136,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Holey Rollers",
-    "logo": "/images/Holey Rollers.png",
+    "logo": "/images/logos/Holey Rollers.png",
     "activity": {
       "description": "Stop in at Holey Rollers in the Paseo to write an encouraging note to a homeless youth or Sisu staff member. Show your map to get a free drip coffee or $2 off any drink when you buy a donut!"
     }
@@ -144,7 +144,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "1984 Studios",
-    "logo": "/images/1984 Studios.jpg",
+    "logo": "/images/logos/1984 Studios.jpg",
     "activity": {
       "description": "Take a selfie outside of 1984 studios! Post it to your story and send us a screenshot."
     }
@@ -152,7 +152,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Meridian Market",
-    "logo": "/images/Meridian Market.jpg",
+    "logo": "/images/logos/Meridian Market.jpg",
     "activity": {
       "description": "Drop off new or gently used coats, jackets, etc. at Meridian Market. Show your treasure map here to recieve a FREE craft coffee (or specialty mocktail lemonade) with purchase of an entree."
     }
@@ -160,7 +160,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Core4",
-    "logo": "/images/Core4 Brewing Company.jpg",
+    "logo": "/images/logos/Core4 Brewing Company.jpg",
     "activity": {
       "description": "Stop in at Core4 Brewery on Film Row to enjoy the patio weather. Show your Treasure Map and get $2 off a beer flight."
     }
@@ -176,7 +176,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Revolucion",
-    "logo": "/images/revolucion.png",
+    "logo": "/images/logos/revolucion.png",
     "activity": {
       "description": "Check in at Revolucion for their grand re-opening! Show your Treasure Map to snag a free taco!"
     }
@@ -184,7 +184,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Red Rooster",
-    "logo": "/images/Red Rooster.jpg",
+    "logo": "/images/logos/Red Rooster.jpg",
     "activity": {
       "description": "Eat local! Visit during brunch, happy hur, or any time in between and get 15% off all food with the purchase of a cocktail or wine."
     }
@@ -192,7 +192,7 @@ const SPONSORS = [
   {
     "tier": "bronze",
     "name": "Dig It",
-    "logo": "/images/POSTED - Dig It.jpg",
+    "logo": "/images/logos/POSTED - Dig It.jpg",
     "activity": {
       "description": "window selfie in your favorite sunnies"
     }
