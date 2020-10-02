@@ -146,7 +146,7 @@ const SPONSORS = [
     "name": "1984 Studios",
     "logo": "/images/logos/1984+Studios+Logo+2020.png",
     "activity": {
-      "description": "Upload a selfie outside of our broadcast partner, <a target='_blank' href='https://www.1984studios.com/'>1984 Studios</a>, in Historic Captiol Hill! Post it to your story with the hashtage #SisuTreasureHunt<br><br>Don't forget to tune into our Facebook Live, Sunday, Oct. 4 at 7 pm where we'll divvy up the spoils!."
+      "description": "Upload a selfie outside of our broadcast partner, <a target='_blank' href='https://www.1984studios.com/'>1984 Studios</a>, in Historic Capitol Hill! Post it to your story with the hashtage #SisuTreasureHunt<br><br>Don't forget to tune into our Facebook Live, Sunday, Oct. 4 at 7 pm where we'll divvy up the spoils!."
     }
   },
   {
