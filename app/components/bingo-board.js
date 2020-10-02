@@ -26,6 +26,12 @@ const POSSIBLE_WINS = [
 ];
 
 export default Component.extend({
+  init(...args) {
+    this._super(...args);
+
+    this.set('userInfo', this.localStorage.getItem('USER_INFO') || {});
+  },
+
   tilesAdapter: service(),
   localStorage: service(),
 
@@ -63,14 +69,27 @@ export default Component.extend({
 
   isSubmitting: false,
 
+  promptSubmit: false,
+
+  hasSubmittedOnce: computed('userInfo.hasSubmittedOnce', function() {
+    return !!this.userInfo.hasSubmittedOnce;
+  }),
+
   actions: {
     toggleTileSelect(tile) {
       this.router.transitionTo('tiles', tile.slug)
     },
+
+    toggleSubmitPrompt() {
+      this.toggleProperty('promptSubmit');
+    },
+
     async submitResults() {
       this.set('isSubmitting', true);
 
-      const userInfo = Object.values(this.localStorage.getItem('USER_INFO')).join('-');
+      const user = this.localStorage.getItem('USER_INFO');
+
+      const userInfo = Object.values(user).join('-');
 
       try {
         const result = await this.tilesAdapter.submitTiles(userInfo);
@@ -80,6 +99,12 @@ export default Component.extend({
         }
 
         this.set('isSubmitting', false);
+        this.set('promptSubmit', false);
+        this.localStorage.setItem('USER_INFO', {
+          ...user,
+          hasSubmittedOnce: true,
+        });
+        this.set('userInfo', this.localStorage.getItem('USER_INFO'));
       } catch (e) {
         this.set('isSubmitting', false);
 

@@ -1,5 +1,7 @@
 {{#if this.userInfo}}
-  <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
+  {{#unless this.userInfo.hasSubmittedOnce}}
+    <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
+  {{/unless}}
 {{else}}
   <div class="popup">
     <div class="ui active basic modal">

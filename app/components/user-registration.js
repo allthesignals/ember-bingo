@@ -21,6 +21,7 @@ export default class UserRegistrationComponent extends Component {
       name,
       email,
       userId: this.args.userId,
+      hasSubmittedOnce: false,
     });
 
     this.userInfo = this.localStorage.getItem('USER_INFO');

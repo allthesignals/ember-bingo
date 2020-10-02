@@ -13,9 +13,48 @@
 </div>
 
 {{#if this.hasSimpleBingo}}
-  <button class="ui green fluid button {{if this.isSubmitting 'loading disabled'}}" {{action 'submitResults'}} disable={{if this.isSubmitting true false}}>
-    Submit Results, or Keep Going!
-  </button>
+  {{#unless this.userInfo.hasSubmittedOnce}}
+    <button class="ui green fluid button " {{action 'toggleSubmitPrompt'}}>
+      Submit Results
+    </button>
+  {{/unless}}
+
+  {{#if this.promptSubmit}}
+    <div class="popup">
+      <div class="ui active basic modal">
+        <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
+
+        <div class="ui huge header">Wait! Are you sure you want to submit?</div>
+        
+        <p>Remember: you can't submit again after you've submitted once!</p>
+
+        <button class="ui primary fluid button" {{action 'toggleSubmitPrompt'}}>
+          Go back!
+        </button>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <button
+          class="ui green fluid button {{if this.isSubmitting 'loading disabled'}}" {{action 'submitResults'}}
+          disable={{if this.isSubmitting true false}}
+        >
+          Yes, I'm done. Submit Results!
+        </button>
+      </div>
+    </div>
+  {{/if}}
+{{/if}}
+
+{{#if this.hasSubmittedOnce}}
+  <div class="popup">
+    <div class="ui active basic modal">
+      <img src="/images/app/vls-logo.png" alt="" class="ui small centered logo image bounce-in-top">
+  
+      <div class="ui huge header">Thanks for playing!</div>
+    </div>
+  </div>
 {{/if}}
 
 {{outlet}}
