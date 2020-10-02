@@ -312,6 +312,8 @@ body {
 
 .tile-header {
   background-color: #0b0b0b;
+  background-size: contain;
+  height: 200px;
 }
 
 .uploaded-photo {

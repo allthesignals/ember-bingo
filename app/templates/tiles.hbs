@@ -7,8 +7,7 @@
         </div>
       {{/if}}
       <div class="content">
-        <div class="header tile-header">
-          <img src="{{this.model.logo}}" alt="" class="ui medium centered image">
+        <div class="header tile-header" style="background-image: url('{{this.model.logo}}'); background-position: center; background-repeat: no-repeat;">
         </div>
         <div class="description">
           {{#if this.model.activity.description}}
@@ -30,9 +29,9 @@
                 {{else}}
                   <i class="add icon"></i>
                   {{#if this.model.image}}
-                  Replace
+                    Replace
                   {{else}}
-                  Photo
+                    Photo
                   {{/if}}
                 {{/if}}
               </ImageUploader>
