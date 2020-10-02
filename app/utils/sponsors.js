@@ -74,7 +74,7 @@ const SPONSORS = [
     "name": "Omega Investments",
     "logo": "/images/logos/Omega Investments.png",
     "activity": {
-      "description": "<a target='_blank' href='http://www.omegabnb.com/'>Omegabnb</a> wants you to check out the murals painted for <a target='_blank' href='http://www.withloveokc/'>With Love</a>. <br><br>There will be DJ's and food trucks Saturday from 4-7pm.<br><br>Submit a selfie in front of your fave! Put it on your story with the hashtag #SisuTreasureHunt!"
+      "description": "<a target='_blank' href='http://www.omegabnb.com/'>Omegabnb</a> wants you to check out the murals painted for <a target='_blank' href='http://www.withloveokc.org/'>With Love</a>. <br><br>There will be DJ's and food trucks Saturday from 4-7pm.<br><br>Submit a selfie in front of your fave! Put it on your story with the hashtag #SisuTreasureHunt!"
     }
   },
   {
