@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
-import { mapBy, alias } from '@ember/object/computed';
+import { filterBy, alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 const DIMENSION = [1, 2, 3, 4, 5];
@@ -45,7 +45,7 @@ export default Component.extend({
       the state management and caching of tiles to localStorage
   */
   tiles: alias('tilesAdapter.tiles'),
-  tilesSelected: mapBy('tiles', 'selected'),
+  tilesSelected: filterBy('tiles', 'selected', true),
 
   wins: computed('tiles.@each.selected', function() {
     let selectedIndices = [];
@@ -63,6 +63,56 @@ export default Component.extend({
         return selectedIndices[index];
       });
     });
+  }),
+
+  winTypes: computed('wins', 'tiles', 'tilesSelected.length', function() {
+    let selectedIndices = [];
+
+    this.tiles.forEach(tile => {
+      if (tile.selected) {
+        selectedIndices.push(true);
+      } else {
+        selectedIndices.push(false);
+      }
+    });
+
+    let scenarioIndicies = [];
+
+    POSSIBLE_WINS.forEach((scenario, sIndex) => {
+      if (scenario.every(index => selectedIndices[index])) {
+        scenarioIndicies.push(sIndex);
+      }
+    });
+
+    return [
+      ...(this.tilesSelected.length === 25) ? ['blackout'] : [],
+      ...scenarioIndicies
+        .map((sIndex) => {
+          if (sIndex <= 1) {
+            return 'diagonal';
+          }
+
+          return 'horizontal/vertical';
+        }),
+    ];
+  }),
+
+  bingoScore: computed('winTypes', function() {
+    if (this.winTypes.includes('blackout')) {
+      return 100;
+    }
+
+    return this.winTypes.reduce((acc, curr) => {
+      if (curr === 'horizontal/vertical') {
+        return acc + 5;
+      }
+
+      if (curr === 'diagonal') {
+        return acc + 10;
+      }
+
+      return acc;
+    }, 0);
   }),
 
   hasSimpleBingo: computed.gte('wins.length', 1),
@@ -88,8 +138,17 @@ export default Component.extend({
       this.set('isSubmitting', true);
 
       const user = this.localStorage.getItem('USER_INFO');
-
-      const userInfo = Object.values(user).join('-');
+      const {
+        name,
+        email,
+        userId,
+      } = user;
+      const userInfo = Object.values({
+        userId: `ID(${userId})`,
+        bingoScore: `SCORE(${this.bingoScore})`,
+        name,
+        email,
+      }).join('-');
 
       try {
         const result = await this.tilesAdapter.submitTiles(userInfo);

@@ -34,10 +34,8 @@ const submitResults = async (tiles, user) => {
     private_key: privateKey.replace(/\\n/gm, "\n"),
   });
 
-  const now = new Date();
-  const formattedDateTime = `${now.toLocaleDateString()}${now.toLocaleTimeString()}`;
-  const cleanedUpDateTime = formattedDateTime.replace(':', '').replace(':', '');
-  const sheetTitle = `${user}-${cleanedUpDateTime}`;
+  const now = Date.now();
+  const sheetTitle = `${user}-${now}`;
 
   const sheet = await doc.addSheet({
     title: sheetTitle,

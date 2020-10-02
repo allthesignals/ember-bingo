@@ -1,10 +1,12 @@
+{{log this.bingoScore}}
+
 <div class="bingo-board">
   {{#each tiles as |tile idx|}}
     <div
       role="button"
       aria-pressed={{tile.selected}}
       class="tile"
-      onclick={{action "toggleTileSelect" tile}}
+      onclick={{fn (mut tile.selected) true}}
     >
       <div style="width: 100%; height: 100%; background-image: url('{{if tile.image tile.image tile.logo}}');background-size: contain; background-repeat: no-repeat; background-position: center;">
 
