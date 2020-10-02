@@ -34,7 +34,7 @@ const SPONSORS = [
     "name": "The Atkinson Team",
     "logo": "/images/logos/atkinson group.png",
     "activity": {
-      "description": "Perform a Random Act of Kindness.<br><br>Write a quick note about what you did, take a screenshot, and upload.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a> - <a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
+      "description": "Perform a Random Act of Kindness.<br><br>Write a quick note about what you did, take a screenshot, and upload.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a><br><a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
     }
   },
   {
@@ -50,7 +50,7 @@ const SPONSORS = [
     "name": "Center for Economic Development Law",
     "logo": "/images/logos/center for econ dev law.png",
     "activity": {
-      "description": "Confirm that you are <a target='_blank' href='https://www.vote.org/am-i-registered-to-vote/?gclid=EAIaIQobChMI3bHQmcyW7AIVgeKzCh0zjQvJEAAYASAAEgJh8_D_BwE'>registered to Vote</a> (or help a friend!).<br><br>Upload a screenshot of the confirmation<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a> - <a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
+      "description": "Confirm that you are <a target='_blank' href='https://www.vote.org/am-i-registered-to-vote/?gclid=EAIaIQobChMI3bHQmcyW7AIVgeKzCh0zjQvJEAAYASAAEgJh8_D_BwE'>registered to Vote</a> (or help a friend!).<br><br>Upload a screenshot of the confirmation<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a><br><a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
     }
   },
   {
@@ -58,7 +58,7 @@ const SPONSORS = [
     "name": "Heartland Historical Properties",
     "logo": "/images/logos/hhp.png",
     "activity": {
-      "description": "Head to the facebook page for <a target='_blank' href='https://www.facebook.com/AbbyMarshallRealtor/'>@AbbyMarshallRealtor</a> and comment on her Viva Las Sisu! post. Submit a screenshot.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a> - <a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
+      "description": "Head to the facebook page for <a target='_blank' href='https://www.facebook.com/AbbyMarshallRealtor/'>@AbbyMarshallRealtor</a> and comment on her Viva Las Sisu! post. Submit a screenshot.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a><br><a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
     }
   },
   {
@@ -90,7 +90,7 @@ const SPONSORS = [
     "name": "James Cooper",
     "logo": "/images/logos/James Cooper.png",
     "activity": {
-      "description": "Write a letter or email to an elected official encouraging them to fund homeless services.<br><br>Upload a photo of your letter or screenshot of your email.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a> - <a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
+      "description": "Write a letter or email to an elected official encouraging them to fund homeless services.<br><br>Upload a photo of your letter or screenshot of your email.<br><br><a target='_blank' href='https://support.apple.com/en-us/HT200289#:~:text=Press%20the%20Side%20Button%20and,swipe%20left%20to%20dismiss%20it.'>iPhone screenshot instructions</a><br><a target='_blank' href='https://support.google.com/android/answer/9075928?hl=en'>Android screenshot instructions</a>"
     }
   },
   {
@@ -146,7 +146,7 @@ const SPONSORS = [
     "name": "1984 Studios",
     "logo": "/images/logos/1984+Studios+Logo+2020.png",
     "activity": {
-      "description": "Upload a selfie outside of our broadcast partner, <a target='_blank' href='https://www.1984studios.com/'>1984 Studios</a>, in Historic Captiol Hill! Post it to your story with the hashtage #SisuTreasureHunt<br><br>Don't forget to tune into our Facebook Live, Sunday, Oct. 4 at 7 pm where we'll divvy up the spoils!."
+      "description": "Upload a selfie outside of our broadcast partner, <a target='_blank' href='https://www.1984studios.com/'>1984 Studios</a>, in Historic Capitol Hill! Post it to your story with the hashtage #SisuTreasureHunt<br><br>Don't forget to tune into our Facebook Live, Sunday, Oct. 4 at 7 pm where we'll divvy up the spoils!."
     }
   },
   {
@@ -154,7 +154,7 @@ const SPONSORS = [
     "name": "Meridian Market",
     "logo": "/images/logos/meridian market.png",
     "activity": {
-      "description": "Drop off a new or gently used coat, jacket, or winter necessity at <a target='_blank' href='https://www.meridianmarketokc.com/'>Meridian Market</a>! <br><br>Show your treasure map to recieve a FREE craft coffee or specialty mocktail lemonade."
+      "description": "Take & upload a selfie dropping off a new or gently used coat, jacket, or winter necessity at <a target='_blank' href='https://www.meridianmarketokc.com/'>Meridian Market</a>! <br><br>Show your treasure map to recieve a FREE craft coffee or specialty mocktail lemonade."
     }
   },
   {
@@ -194,7 +194,7 @@ const SPONSORS = [
     "name": "Dig It",
     "logo": "/images/logos/dig it.png",
     "activity": {
-      "description": "Take & upload selfie in your favorite sunnies at <a target='_blank' href='https://digitokc.com/'>Dig It!</a>in the Plaza! Post it to your story with the hashtag #SisuTreasureHunt!"
+      "description": "Take & upload selfie in your favorite sunnies at <a target='_blank' href='https://digitokc.com/'>Dig It!</a> in the Plaza! Post it to your story with the hashtag #SisuTreasureHunt!"
     }
   },
   {
