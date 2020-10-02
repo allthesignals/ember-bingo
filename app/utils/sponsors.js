@@ -18,7 +18,7 @@ const SPONSORS = [
     "name": "Haskell",
     "logo": "/images/logos/haskell.png",
     "activity": {
-      "description": "Stop into Not Your Average Joe and tag yourself & the Viva Treasure Hunt to pick up a free sticker."
+      "description": "Stop into Elemental Coffee and show your Treasure Map to get a free mini cookie."
     }
   },
   {
@@ -34,7 +34,7 @@ const SPONSORS = [
     "name": "The Atkinson Team",
     "logo": "/images/logos/atkinson group.png",
     "activity": {
-      "description": "Beth Atkinson encurages you to perform a Random Act of Kindness."
+      "description": "Perform a Random Act of Kindness."
     }
   },
   {
@@ -58,7 +58,7 @@ const SPONSORS = [
     "name": "Heartland Historical Properties",
     "logo": "/images/logos/hhp.png",
     "activity": {
-      "description": "Post a selfie in front of HHP's sign at 3503 Oakhurst Drive in MWC - RIDDLE in window?"
+      "description": "Post a selfie in front of HHP's sign at 3503 Oakhurst Drive in Midwest City and submit a screenshot."
     }
   },
   {
@@ -98,7 +98,7 @@ const SPONSORS = [
     "name": "Brandon - TOR",
     "logo": "/images/logos/The Other Room.png",
     "activity": {
-      "description": ""
+      "description": "Take a selfie with the BLANK outside of The Other Room in the Paseo."
     }
   },
   {
@@ -106,7 +106,7 @@ const SPONSORS = [
     "name": "First American Title",
     "logo": "/images/logos/First American.png",
     "activity": {
-      "description": "Selfie at a first american title - guessing game in window?"
+      "description": "Post a selfie at the First American Title and submit a screenshot. If you pick the location on 5609 N Classen, look for a special bonus game in the front window! "
     }
   },
   {
@@ -122,7 +122,7 @@ const SPONSORS = [
     "name": "Factory Obscura",
     "logo": "/images/logos/Factory Obscura.png",
     "activity": {
-      "description": "Take a selfie at Factory Obscura mix tape. Take advantage of BOGO tickets with the code FOLOVESSISU"
+      "description": "Take a selfie at Factory Obscura Mix Tape. Take advantage of BOGO tickets with the code FOLOVESSISU"
     }
   },
   {
@@ -146,7 +146,7 @@ const SPONSORS = [
     "name": "1984 Studios",
     "logo": "/images/logos/1984+Studios+Logo+2020.png",
     "activity": {
-      "description": "Take a selfie outside of 1984 studios! Post it to your story and send us a screenshot."
+      "description": "Take a selfie outside of our broadcast partners, 1984 Studios, at 205 SW 25th Street! Post it to your story and send us a screenshot."
     }
   },
   {
@@ -154,7 +154,7 @@ const SPONSORS = [
     "name": "Meridian Market",
     "logo": "/images/logos/meridian market.png",
     "activity": {
-      "description": "Drop off new or gently used coats, jackets, etc. at Meridian Market. Show your treasure map here to recieve a FREE craft coffee (or specialty mocktail lemonade) with purchase of an entree."
+      "description": "You can drop off new or gently used coats, jackets, or winter necessities at Meridian Market! Show your treasure map here to recieve a FREE craft coffee or specialty mocktail lemonade."
     }
   },
   {
@@ -170,7 +170,7 @@ const SPONSORS = [
     "name": "Ideal Homes",
     "logo": "/images/logos/ideal homes.png",
     "activity": {
-      "description": ""
+      "description": "Check out our favorite vegan supporters at The Loaded Bowl and show your Map to get a free side of Mac & Cheese with your purchase of a bowl. "
     }
   },
   {
@@ -194,7 +194,7 @@ const SPONSORS = [
     "name": "Dig It",
     "logo": "/images/logos/dig it.png",
     "activity": {
-      "description": "window selfie in your favorite sunnies"
+      "description": "Take a window selfie in your favorite sunnies while you enjoy the Plaza!"
     }
   },
   {
@@ -202,7 +202,7 @@ const SPONSORS = [
     "name": "Castle row",
     "logo": "/images/logos/CASTLEROW_BLANK_W.png",
     "activity": {
-      "description": "castle row - multimedia production have a mural wall of music icons that we could use to set up photo shoot. 2-5pm on Sat & Sun?"
+      "description": "Stop in from 2-5pm on Saturday or Sunday to check out Castle Row's mural of music icons."
     }
   },
 ].map(sponsor => ({
