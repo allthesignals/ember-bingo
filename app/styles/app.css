@@ -23,7 +23,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 720px;
-  border-radius: 3px;
+  border-radius: 100px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ body {
   margin: auto;
   cursor: pointer;
   text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 18px;
   color: white;
   background-color: rgba(255, 255, 255, 0.178);
@@ -51,7 +51,7 @@ body {
 @media only screen and (max-width: 720px) {
   .tile {
     width: 20%;
-    height: 85px;
+    height: 80px;
   }
 }
 
