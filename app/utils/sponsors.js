@@ -10,7 +10,7 @@ const SPONSORS = [
     "name": "Inasmuch Foundation",
     "logo": "/images/logos/Inasmuch.png",
     "activity": {
-      "description": "2020's Viva Las Sisu Treasure Hunt is proudly presented by the <a target='_blank' href='https://inasmuchfoundation.org/'>Inasmuch Foundation.</a>"
+      "description": "2020's Viva Las Sisu Treasure Hunt is proudly presented by the <a target='_blank' href='https://inasmuchfoundation.org/'>Inasmuch Foundation.</a><br>Take a silly selfie and upload it to get the hang of things."
     }
   },
   {
