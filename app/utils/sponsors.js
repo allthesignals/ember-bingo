@@ -194,7 +194,7 @@ const SPONSORS = [
     "name": "Dig It",
     "logo": "/images/logos/dig it.png",
     "activity": {
-      "description": "Take & upload selfie in your favorite sunnies at <a target='_blank' href='https://digitokc.com/'>Dig It!</a> in the Plaza! Post it to your story with the hashtag #SisuTreasureHunt!"
+      "description": "Take & upload a selfie in your favorite sunnies at <a target='_blank' href='https://digitokc.com/'>Dig It!</a> in the Plaza! Post it to your story with the hashtag #SisuTreasureHunt!"
     }
   },
   {
